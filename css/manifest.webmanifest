@@ -1,7 +1,7 @@
 {
   "name": "Royal Techno",
   "short_name": "Royal Techno",
-  "start_url": "/",
+  "start_url": "../index.html",
   "display": "standalone",
   "background_color": "#fff",
    "theme-color":"#f48c5b",
