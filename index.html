@@ -10,7 +10,7 @@
   <meta name="apple-touch-fullscreen" content="yes">
 
   <!--Angular PWA Settings-->
-  <link rel="manifest" href="manifest.webmanifest">
+  <!--<link rel="manifest" href="manifest.webmanifest">-->
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="theme-color" content="#f48c5b">
   <link rel="canonical" href="https://satyadeepsb.github.io/royaltechno/" />
@@ -152,7 +152,7 @@
   <div class="container">
     <div class="row">
       <div class="col text-center py-5">
-        <h1 class="display-4">Our Services</h1>
+        <h1 class="display-4">Our Services For</h1>
       </div>
     </div>
   </div>
@@ -563,15 +563,16 @@
         <h5>Contacts</h5>
         <dl class="contact-list">
           <dt>Address:</dt>
-          <dd>Aundh Area, Pune</dd>
+          <dd>26/130, Sec-26</dd>
+          <dd>Pradhikaran, Nigadi, Pune- 411044</dd>
         </dl>
         <dl class="contact-list">
-          <dt>email:</dt>
-          <dd><a href="mailto:enquiry@royaltechno.org">enquiry@royaltechno.org</a></dd>
+          <dt>Email:</dt>
+          <dd><a href="mailto:engg@royaltechno.org">engg@royaltechno.org</a></dd>
         </dl>
         <dl class="contact-list">
-          <dt>phones:</dt>
-          <dd><a href="tel:#">+91 9999999999</a> <span>or</span> <a href="tel:#">+91 7777777777</a>
+          <dt>Phones:</dt>
+          <dd><a href="tel:9112953535">+91 9112953535</a> <span>or</span> <a href="tel:9503723535">+91 9503723535</a>
           </dd>
         </dl>
       </div>
@@ -672,6 +673,21 @@
 <script src="js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
 <script>
+
+  var backgrounds = ['url(img/metro.jpg)', 'url(img/home.jpg)' ];
+  var current = 0;
+  function nextBackground() {
+
+    $('#home-section').stop().animate({opacity: 0.4},800,function(){
+      $(this).css({'background-image':  backgrounds[current = ++current % backgrounds.length]}).animate({opacity: 1},{duration:800});
+    });
+    setTimeout(nextBackground, 3000);
+  }
+  setTimeout(nextBackground, 3000);
+$('#home-section').stop().animate({opacity: 0.4},800,function(){
+  $(this).css({'background-image':  backgrounds[0]}).animate({opacity: 1},{duration:800});
+});
+  /*$('#home-section').css('background-image', backgrounds[0]);*/
   // Get the current year for the copyright
   $('#year').text(new Date().getFullYear());
 
