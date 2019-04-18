@@ -3,8 +3,18 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-touch-fullscreen" content="yes">
+
+  <!--Angular PWA Settings-->
+  <link rel="manifest" href="css/manifest.webmanifest">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#f48c5b">
+  <link rel="canonical" href="http://royaltechno.org/" />
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
@@ -12,6 +22,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
   <link rel="stylesheet" href="css/style.css">
   <title>Royal Techno Engineers</title>
+  <link rel="icon" href="img/favicon.ico">
   <!--Static Metadata-->
   <meta name="author" content="Stark Technologies"/>
   <meta name="contributor" content="Satyadeep Basugade"/>
@@ -29,12 +40,12 @@
   <meta property="og:title" content="Royal Techno Engineers"/>
   <meta property="og:description" content="Royal Techno Engineers" />
   <meta property="og:image" content="https://satyadeepsb.github.io/royaltechno/img/logo.png" />
-  <meta property="og:image:alt" content="The Solution to Your Recruiting Needs - BrilliantFIT" />
+  <meta property="og:image:alt" content="Royal Techno Engineers" />
   <meta property="og:link" content="https://satyadeepsb.github.io/royaltechno/img/logo.png">
-  <meta property="og:url" content="https://satyadeepsb.github.io/royaltechno" />
+  <meta property="og:url" content="http://royaltechno.org/" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="https://satyadeepsb.github.io/royaltechno" />
+  <meta property="og:site_name" content="http://royaltechno.org/" />
 
   <!-- Schema.org markup for Google+ -->
   <meta itemprop="name" content="Royal Techno Engineers">
@@ -55,7 +66,7 @@
 <body data-spy="scroll" data-target="#main-nav" id="home">
 <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top" id="main-nav">
   <div class="container">
-    <a href="index.html" class="navbar-brand">
+    <a href="#home" class="navbar-brand">
       <img src="img/logo.png" alt="RTE" height="50">
     </a>
     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -75,6 +86,9 @@
         <li class="nav-item">
           <a href="#share-head-section" class="nav-link">Products</a>
         </li>
+        <li class="nav-item">
+          <a href="#gallery-head-section" class="nav-link">Gallery</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -93,13 +107,20 @@
             <strong> INDIAN RAILWAYS</strong>
           </h1>
         </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 text-center d-block d-sm-block d-md-block d-lg-none" style="padding-top: 50px;">
+          <p style="font-size: 25px">BUSINESS DEVELOPMENT WITH</p>
+          <img src="img/indian-railway-logo.png" alt="" height="200">
+          <p style="font-size: 25px">
+            <strong> INDIAN RAILWAYS</strong>
+          </p>
+        </div>
       </div>
     </div>
   </div>
 </header>
 
 <!-- EXPLORE HEAD -->
-<section id="explore-head-section" class="bg-primary">
+<section id="explore-head-section" class="bg-primary head-section">
   <div class="container">
     <div class="row">
       <div class="col text-center py-5">
@@ -128,7 +149,7 @@
 </section>
 
 <!-- CREATE HEAD -->
-<section id="create-head-section" class="bg-primary">
+<section id="create-head-section" class="bg-primary head-section">
   <div class="container">
     <div class="row">
       <div class="col text-center py-5">
@@ -164,19 +185,19 @@
               </div>
             </div>
           </div>
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="flex-container">
-              <div class="flex-child">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" style="margin-top: 5px">
                 <div class="box">
-                  <img src="img/shell-painting.jpg" alt=""  class="img-fluid section-img">
+                  <img src="img/shell-painting.jpg" alt="Shell during Painting"  class="img-fluid section-img">
                   <div class="overbox">
                     <div class="title overtext"> Shell during Painting</div>
                   </div>
                 </div>
               </div>
-              <div class="flex-child">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" style="margin-top: 5px">
                 <div class="box">
-                  <img src="img/shell-inside.jpg" alt="" class="img-fluid section-img">
+                  <img src="img/shell-inside.jpg" alt="Inside view of Shell" class="img-fluid section-img">
                   <div class="overbox">
                     <div class="title overtext">Inside view of Shell</div>
                   </div>
@@ -208,22 +229,21 @@
               </div>
             </div>
           </div>
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="flex-container">
-              <div class="flex-child">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" style="margin-top: 5px">
                 <div class="box">
-                  <img src="img/bog.jpg" alt="" class="img-fluid section-img">
+                  <img src="img/bog.jpg" alt="ICF Bogie" class="img-fluid section-img">
                   <div class="overbox">
                     <div class="title overtext"> ICF Bogie</div>
                   </div>
                 </div>
               </div>
-              <div class="flex-child">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" style="margin-top: 5px">
                 <div class="box">
-                  <img src="img/bog1.jpg" alt=""  class="img-fluid section-img">
+                  <img src="img/bog1.jpg" alt="FIAT Bogie"  class="img-fluid section-img">
                   <div class="overbox">
                     <div class="title overtext"> FIAT Bogie </div>
-                    <!--<div class="tagline overtext"> Tagline </div>-->
                   </div>
                 </div>
               </div>
@@ -233,7 +253,7 @@
       </div>
       <div class="col-md-4 col-sm-12 col-xs-12 ">
         <div>
-          <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <h2 class="text-center">Furnishing</h2>
             <h4 class="text-center">Major sub-assemblies are</h4>
             <div class="flex-container">
@@ -253,25 +273,23 @@
               </div>
             </div>
           </div>
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="flex-container">
-              <div class="flex-child">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" style="margin-top: 5px">
                 <div class="box">
-                  <img src="img/fur.jpg" alt=""  class="img-fluid section-img">
+                  <img src="img/fur.jpg" alt="Seater"  class="img-fluid section-img">
                   <div class="overbox">
                     <div class="title overtext">Seater</div>
                   </div>
                 </div>
-
               </div>
-              <div class="flex-child">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" style="margin-top: 5px">
                 <div class="box">
-                  <img src="img/fur2.jpg" alt=""  class="img-fluid section-img">
+                  <img src="img/fur2.jpg" alt="Sleeper"  class="img-fluid section-img">
                   <div class="overbox">
                     <div class="title overtext"> Sleeper</div>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
@@ -282,7 +300,7 @@
 </section>
 
 <!-- SHARE HEAD -->
-<section id="share-head-section" class="bg-primary">
+<section id="share-head-section" class="bg-primary head-section">
   <div class="container">
     <div class="row">
       <div class="col py-5">
@@ -297,13 +315,13 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12" style="margin-bottom: 20px">
-        <div class="flex-container">
-          <div class="flex-child"><button class="btn btn-default">AC coaches</button></div>
-          <div class="flex-child"><button class="btn btn-default">Power car coaches</button></div>
-          <div class="flex-child"><button class="btn btn-default">Pantry Cars</button></div>
-          <div class="flex-child"><button class="btn btn-default">Non-AC coaches</button></div>
-          <div class="flex-child"><button class="btn btn-default">DMUs & EMUs</button></div>
-          <div class="flex-child"><button class="btn btn-default">Special purposes coaches</button></div>
+        <div class="row">
+          <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12"><button class="btn btn-default btn-block" style="margin-top: 5px">AC coaches</button></div>
+          <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12"><button class="btn btn-default btn-block" style="margin-top: 5px">Power car coaches</button></div>
+          <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12"><button class="btn btn-default btn-block" style="margin-top: 5px">Pantry Cars</button></div>
+          <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12"><button class="btn btn-default btn-block" style="margin-top: 5px">Non-AC coaches</button></div>
+          <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12"><button class="btn btn-default btn-block" style="margin-top: 5px">DMUs & EMUs</button></div>
+          <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12"><button class="btn btn-default btn-block" style="margin-top: 5px">Special coaches</button></div>
         </div>
       </div>
       <div class="col-md-12">
@@ -341,7 +359,7 @@
   </div>
 </section>
 
-<section id="gallery-head-section" class="bg-primary">
+<section id="gallery-head-section" class="bg-primary head-section">
   <div class="container">
     <div class="row">
       <div class="col py-5">
@@ -353,88 +371,179 @@
 
 <section id="gallery-section" class="py-5">
   <div class="container-fluid">
-    <p class="text-center">Check out our products</p>
     <div class="row mb-3">
       <div class="col-md-2">
-        <a href="https://source.unsplash.com/random/562x562" data-toggle="lightbox" data-gallery="img-gallery" data-height="562"
-           data-width="562">
-          <img src="https://source.unsplash.com/random/562x562" alt="" class="img-fluid">
-        </a>
+        <div class="box">
+          <img src="img/endwall.jpg" alt="End Wall" class="img-fluid section-img section-img">
+          <div class="overbox">
+            <div class="title overtext"> End Wall </div>
+          </div>
+        </div>
       </div>
       <div class="col-md-2">
-        <a href="https://source.unsplash.com/random/560x560" data-toggle="lightbox" data-gallery="img-gallery" data-height="560"
-           data-width="560">
-          <img src="https://source.unsplash.com/random/560x560" alt="" class="img-fluid">
-        </a>
-      </div>
-
-      <div class="col-md-2">
-        <a href="https://source.unsplash.com/random/561x561" data-toggle="lightbox" data-gallery="img-gallery" data-height="561"
-           data-width="561">
-          <img src="https://source.unsplash.com/random/561x561" alt="" class="img-fluid">
-        </a>
+        <div class="box">
+          <img src="img/bogie-frame.png" alt="Bogie Frame" class="img-fluid section-img">
+          <div class="overbox">
+            <div class="title overtext"> Bogie Frame </div>
+          </div>
+        </div>
       </div>
       <div class="col-md-2">
-        <a href="https://source.unsplash.com/random/561x561" data-toggle="lightbox" data-gallery="img-gallery" data-height="561"
-           data-width="561">
-          <img src="https://source.unsplash.com/random/561x561" alt="" class="img-fluid">
-        </a>
+        <div class="box">
+          <img src="img/slung-ss-water-tanks.jpg" alt="Slung SS" class="img-fluid section-img">
+          <div class="overbox">
+            <div class="title overtext"> Slung SS </div>
+          </div>
+        </div>
       </div>
       <div class="col-md-2">
-        <a href="https://source.unsplash.com/random/562x562" data-toggle="lightbox" data-gallery="img-gallery" data-height="562"
-           data-width="562">
-          <img src="https://source.unsplash.com/random/562x562" alt="" class="img-fluid">
-        </a>
+        <div class="box">
+          <img src="img/lavatory.jpg" alt="Lavatory" class="img-fluid section-img">
+          <div class="overbox">
+            <div class="title overtext"> Lavatory </div>
+          </div>
+        </div>
       </div>
       <div class="col-md-2">
-      <a href="https://source.unsplash.com/random/562x562" data-toggle="lightbox" data-gallery="img-gallery" data-height="562"
-         data-width="562">
-        <img src="https://source.unsplash.com/random/562x562" alt="" class="img-fluid">
-      </a>
+        <div class="box">
+          <img src="img/bogie-bolster-1.png" alt="Bogie Bolster" class="img-fluid section-img">
+          <div class="overbox">
+            <div class="title overtext"> Bogie Bolster </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="box">
+          <img src="img/axle.png" alt="Axle Cover" class="img-fluid section-img">
+          <div class="overbox">
+            <div class="title overtext"> Axle Cover </div>
+          </div>
+        </div>
+      </div>
     </div>
-
+    <div class="row mb-3">
+      <div class="col-md-2">
+        <div class="box">
+          <img src="img/door1.jpg" alt="Steel Door" class="img-fluid section-img">
+          <div class="overbox">
+            <div class="title overtext"> Steel Door </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="box">
+          <img src="img/door2.png" alt="Steel Door" class="img-fluid section-img">
+          <div class="overbox">
+            <div class="title overtext"> Steel Door </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="box">
+          <img src="img/frp.jpg" alt="Side Wall" class="img-fluid section-img">
+          <div class="overbox">
+            <div class="title overtext"> Side Wall </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="box">
+          <img src="img/frp1.jpg" alt="Ceiling " class="img-fluid section-img">
+          <div class="overbox">
+            <div class="title overtext"> Ceiling  </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="box">
+          <img src="img/side-buffers1.png" alt="Side Buffers" class="img-fluid section-img">
+          <div class="overbox">
+            <div class="title overtext"> Side Buffers  </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="box">
+          <img src="img/side-buffer2.png" alt="Side Buffers" class="img-fluid section-img">
+          <div class="overbox">
+            <div class="title overtext"> Side Buffers  </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="row mb-3">
       <div class="col-md-2">
-        <a href="https://source.unsplash.com/random/560x560" data-toggle="lightbox" data-gallery="img-gallery" data-height="560"
-           data-width="560">
-          <img src="https://source.unsplash.com/random/560x560" alt="" class="img-fluid">
-        </a>
+        <div class="box">
+          <img src="img/control-arm1.png" alt="Control Arm" class="img-fluid section-img">
+          <div class="overbox">
+            <div class="title overtext"> Control Arm  </div>
+          </div>
+        </div>
       </div>
       <div class="col-md-2">
-        <a href="https://source.unsplash.com/random/560x560" data-toggle="lightbox" data-gallery="img-gallery" data-height="560"
-           data-width="560">
-          <img src="https://source.unsplash.com/random/560x560" alt="" class="img-fluid">
-        </a>
+        <div class="box">
+          <img src="img/control-arm2.png" alt="Control Arm" class="img-fluid section-img">
+          <div class="overbox">
+            <div class="title overtext"> Control Arm  </div>
+          </div>
+        </div>
       </div>
+      <div class="col-md-2">
+        <div class="box">
+          <img src="img/control-arm3.png" alt="Control Arm" class="img-fluid section-img">
+          <div class="overbox">
+            <div class="title overtext"> Control Arm  </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="box">
+          <img src="img/control-arm4.png" alt="Control Arm" class="img-fluid section-img">
+          <div class="overbox">
+            <div class="title overtext"> Control Arm  </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="box">
+          <img src="img/discs.png" alt="Discs" class="img-fluid section-img">
+          <div class="overbox">
+            <div class="title overtext"> Discs  </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="box">
+          <img src="img/aluminum-casting3.png" alt="Aluminum Casting" class="img-fluid section-img">
+          <div class="overbox">
+            <div class="title overtext"> Aluminum Casting  </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="row mb-3">
       <div class="col-md-2">
-        <a href="https://source.unsplash.com/random/562x562" data-toggle="lightbox" data-gallery="img-gallery" data-height="562"
-           data-width="562">
-          <img src="https://source.unsplash.com/random/562x562" alt="" class="img-fluid">
-        </a>
+        <div class="box">
+          <img src="img/aluminum-casting1.png" alt="Aluminum Casting" class="img-fluid section-img">
+          <div class="overbox">
+            <div class="title overtext"> Aluminum Casting  </div>
+          </div>
+        </div>
       </div>
       <div class="col-md-2">
-        <a href="https://source.unsplash.com/random/562x562" data-toggle="lightbox" data-gallery="img-gallery" data-height="562"
-           data-width="562">
-          <img src="https://source.unsplash.com/random/562x562" alt="" class="img-fluid">
-        </a>
-      </div>
-      <div class="col-md-2">
-        <a href="https://source.unsplash.com/random/560x560" data-toggle="lightbox" data-gallery="img-gallery" data-height="560"
-           data-width="560">
-          <img src="https://source.unsplash.com/random/560x560" alt="" class="img-fluid">
-        </a>
-      </div>
-      <div class="col-md-2">
-        <a href="https://source.unsplash.com/random/562x562" data-toggle="lightbox" data-gallery="img-gallery" data-height="562"
-           data-width="562">
-          <img src="https://source.unsplash.com/random/562x562" alt="" class="img-fluid">
-        </a>
+        <div class="box">
+          <img src="img/aluminum-casting2.png" alt="Aluminum Casting" class="img-fluid section-img">
+          <div class="overbox">
+            <div class="title overtext"> Aluminum Casting  </div>
+          </div>
+        </div>
       </div>
 
     </div>
+
+
   </div>
 </section>
 
@@ -446,24 +555,24 @@
       <div class="col-md-4 col-xl-5" style="margin-top: 10px">
         <div class="pr-xl-4" style="padding-top: 30px;padding-left: 45px">
           <a class="brand" href="#home">
-          <img class="brand-logo-light" src="img/logo.png"
-               alt="Royal Techno Engineers"  height="150" srcset="img/logo.png 2x">
-        </a>
+            <img class="brand-logo-light img-fluid" src="img/logo.png"
+                 alt="Royal Techno Engineers"  style="height: 150px" srcset="img/logo.png 2x">
+          </a>
         </div>
       </div>
       <div class="col-md-4" style="margin-top: 10px">
         <h5>Contacts</h5>
         <dl class="contact-list">
           <dt>Address:</dt>
-          <dd>798 South Park Avenue, Jaipur, Raj</dd>
+          <dd>Aundh Area, Pune</dd>
         </dl>
         <dl class="contact-list">
           <dt>email:</dt>
-          <dd><a href="mailto:#">dkstudioin@gmail.com</a></dd>
+          <dd><a href="mailto:enquiry@royaltechno.org">enquiry@royaltechno.org</a></dd>
         </dl>
         <dl class="contact-list">
           <dt>phones:</dt>
-          <dd><a href="tel:#">+91 7568543012</a> <span>or</span> <a href="tel:#">+91 9571195353</a>
+          <dd><a href="tel:#">+91 9999999999</a> <span>or</span> <a href="tel:#">+91 7777777777</a>
           </dd>
         </dl>
       </div>
@@ -482,6 +591,9 @@
           <li>
             <a href="#share-head-section">Products</a>
           </li>
+          <li>
+            <a href="#gallery-head-section">Gallery</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -489,7 +601,7 @@
   <div class="row no-gutters social-container">
     <div class="col">
       <a class="social-inner" href="#">
-      <span> <i class="fab fa-facebook-square fa-3x" style="color: #4267b1"></i> </span></a></div>
+        <span> <i class="fab fa-facebook-square fa-3x" style="color: #4267b1"></i> </span></a></div>
     <div class="col"><a class="social-inner" href="#">
       <span><i class="fab fa-twitter-square fa-3x" style="color: #4ab3f4"></i></span></a></div>
     <div class="col"><a class="social-inner" href="#">
@@ -553,7 +665,7 @@
   </div>
 </div>-->
 
-
+<script src="index.js" type="module"></script>
 <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
