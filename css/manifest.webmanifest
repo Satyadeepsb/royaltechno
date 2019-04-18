@@ -1,7 +1,7 @@
 {
   "name": "Royal Techno",
   "short_name": "Royal Techno",
-  "start_url": "https://satyadeepsb.github.io/royaltechno/",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#fff",
    "theme-color":"#f48c5b",

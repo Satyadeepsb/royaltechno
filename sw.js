@@ -2,7 +2,8 @@ const cacheName = 'Royal Techno';
 const staticAssets = [
   '/',
   'index.html',
-  'css/styles.css',
+  'css',
+  'js',
   'img',
   'index.js',
 ];
