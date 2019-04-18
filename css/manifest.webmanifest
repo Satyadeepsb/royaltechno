@@ -4,6 +4,7 @@
   "start_url": ".",
   "display": "standalone",
   "background_color": "#fff",
+   "theme-color":"#f48c5b",
   "description": "Royal Techno Engineers",
   "icons": [
     {
@@ -30,11 +31,16 @@
          "src": "../img/android-icon/icon-144x144.png",
          "sizes": "144x144",
          "type": "image/png"
+  },
+ {
+     "src": "../img/android-icon/icon-192x192.png",
+     "sizes": "192x192",
+     "type": "image/png"
    },
-   {
-         "src": "../img/android-icon/icon-192x192.png",
-         "sizes": "192x192",
-         "type": "image/png"
-       }
+  {
+        "src": "../img/android-icon/icon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
   ]
 }
