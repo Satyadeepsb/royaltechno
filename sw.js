@@ -7,6 +7,7 @@ const staticAssets = [
     'img',
     'fonts',
     'index.js',
+    'manifest.webmanifest'
 ];
 
 self.addEventListener('install', async e => {
