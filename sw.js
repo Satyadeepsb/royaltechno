@@ -1,4 +1,4 @@
-const cacheName = 'Royal Techno';
+const cacheName = 'RTE';
 const staticAssets = [
     '/',
     'index.html',
